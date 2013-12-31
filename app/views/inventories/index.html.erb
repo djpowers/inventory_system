@@ -1,0 +1,21 @@
+<h1>Inventory List</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title:</th>
+      <th>Description:</th>
+      <th>Quantity:</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @inquires.each do |inquiry| %>
+      <tr>
+        <td><%= inquiry.title %></td>
+        <td><%= inquiry.description %></td>
+        <td><%= inquiry.quantity %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
