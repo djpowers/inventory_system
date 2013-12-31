@@ -33,7 +33,7 @@ feature 'Employee adds inventory' do
     fill_in "Quantity", with: ""
 
     click_on "Create Inventory"
-    expect(page).to have_content "probhited this inventory from being saved"
+    expect(page).to have_content "prevented this inventory from being saved"
 
   end
 

@@ -39,6 +39,7 @@ group :development, :test do
   gem 'factory_girl_rails'
   gem 'capybara'
   gem 'pry-rails'
+  gem 'launchy'
 end
 
 # Use ActiveModel has_secure_password

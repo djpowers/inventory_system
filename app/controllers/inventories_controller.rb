@@ -8,12 +8,15 @@ class InventoriesController < ApplicationController
     @inventory = Inventory.new(inventory_params)
 
     if @inventory.save
-      redirect_to @inventory, notice: 'Inquiry was successfully created.'
+      redirect_to @inventory, notice: 'Inventory was successfully created.'
+    else
+      puts 'There was an error!'
+      render :new
     end
   end
 
   def show
-
+    @inventory = Inventory.find(params[:id])
   end
 
 
