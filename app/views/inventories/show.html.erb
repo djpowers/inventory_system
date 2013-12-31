@@ -1,1 +1,7 @@
 <p id="notice"><%= notice %></p>
+
+<td><strong>Title: </strong><%= @inventory.title %></td><br>
+<td><strong>Description: </strong><%= @inventory.description %></td><br>
+<td><strong>Quantity: </strong><%= @inventory.quantity %></td><br>
+
+<%= link_to 'Back', inventories_path %>
